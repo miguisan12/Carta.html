@@ -13,10 +13,12 @@
             height: 100vh;
             background-color: #f0f0f0;
             margin: 0;
+            padding: 10px; /* Añadido para margen interior en móviles */
             transition: background-color 0.5s;
         }
         .envelope {
-            width: 300px;
+            width: 90%; /* Ajustado para dispositivos móviles */
+            max-width: 300px;
             height: 200px;
             background-color: white;
             border: 2px solid #d3d3d3;
@@ -79,6 +81,8 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
+            width: 90%; /* Ajustado para dispositivos móviles */
+            max-width: 500px;
         }
         .letter p {
             margin: 0;
@@ -86,6 +90,7 @@
             font-size: 16px;
             color: #333;
             margin-bottom: 20px;
+            line-height: 1.5; /* Añadido para mejor legibilidad */
         }
         .tenor-gif-embed {
             max-width: 100%;

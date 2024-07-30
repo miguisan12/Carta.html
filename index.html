@@ -95,20 +95,10 @@
             margin-bottom: 20px;
             line-height: 1.5;
         }
-        .tenor-gif-embed {
-            max-width: 100%;
-            width: 150px;
-        }
         @keyframes fadeIn {
             to {
                 opacity: 1;
             }
-        }
-        .gif-container {
-            margin-top: 20px;
-            width: 300px;
-            opacity: 0;
-            animation: fadeIn 1s forwards;
         }
     </style>
 </head>
@@ -116,13 +106,6 @@
     <div class="envelope" id="envelope">
         <div class="heart"></div>
         <p>Ábreme</p>
-    </div>
-    <div class="gif-container" id="gif-container">
-        <div class="tenor-gif-embed" data-postid="18365788275548540386" data-share-method="host" data-aspect-ratio="1.05263" data-width="100%">
-            <a href="https://tenor.com/view/%EB%AA%A8%EC%B0%8C-%EB%AA%A8%EB%AA%A8%EC%B0%8C-%EB%AA%A8%EB%AA%A8%EB%83%A5-%EB%B0%A5-gif-18365788275548540386">모찌 모모찌 GIF</a>
-            from <a href="https://tenor.com/search/%EB%AA%A8%EC%B0%8C-gifs">모찌 GIFs</a>
-        </div>
-        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     </div>
     <div class="letter" id="letter">
         <p>
@@ -162,23 +145,18 @@
             Espero que este poema te recuerde lo especial que eres,<br>
             Y cuánto significas para mí en este viaje llamado vida...
         </p>
-        <div class="tenor-gif-embed" data-postid="24105461" data-share-method="host" data-aspect-ratio="0.875" data-width="50%">
-            <a href="https://tenor.com/view/peach-goma-love-peachcute-and-gif-24105461">Peach Goma GIF</a>
-            from <a href="https://tenor.com/search/peach-gifs">Peach GIFs</a>
-        </div>
-        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     </div>
 
     <script>
         document.getElementById('envelope').addEventListener('click', function() {
             document.body.style.backgroundColor = '#ffe4e1'; /* Color rosa pastel */
             document.getElementById('envelope').style.display = 'none';
-            document.getElementById('gif-container').style.display = 'none';
             document.getElementById('letter').style.display = 'flex';
         });
     </script>
 </body>
 </html>
+
 
 
 

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            transition: background-color 0.5s;
+        }
+        .envelope {
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border: 2px solid #d3d3d3;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s, opacity 1s;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            position: relative;
+        }
+        .envelope:hover {
+            transform: scale(1.05);
+        }
+        .heart {
+            width: 50px;
+            height: 45px;
+            background-color: red;
+            transform: rotate(-45deg);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            width: 50px;
+            height: 45px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart::before {
+            top: -22.5px;
+            left: 0;
+        }
+        .heart::after {
+            top: 0;
+            left: 22.5px;
+        }
+        .envelope p {
+            margin: 10px 0 0 0;
+            font-family: 'Georgia', serif;
+            font-size: 16px;
+            color: #333;
+        }
+        .letter {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #d3d3d3;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .letter p {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .tenor-gif-embed {
+            max-width: 100%;
+            width: 150px; /* Ajusta el tamaño del GIF */
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .gif-container {
+            margin-top: 20px;
+            width: 300px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope" id="envelope">
+        <div class="heart"></div>
+        <p>Ábreme</p>
+    </div>
+    <div class="gif-container" id="gif-container">
+        <div class="tenor-gif-embed" data-postid="18365788275548540386" data-share-method="host" data-aspect-ratio="1.05263" data-width="100%">
+            <a href="https://tenor.com/view/%EB%AA%A8%EC%B0%8C-%EB%AA%A8%EB%AA%A8%EC%B0%8C-%EB%AA%A8%EB%AA%A8%EB%83%A5-%EB%B0%A5-gif-18365788275548540386">모찌 모모찌 GIF</a> 
+            from <a href="https://tenor.com/search/%EB%AA%A8%EC%B0%8C-gifs">모찌 GIFs</a>
+        </div> 
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+    <div class="letter" id="letter">
+        <p>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            Vale,<br><br>
+
+            Eres un rincón de calma en medio del torbellino,<br>
+            Un faro que brilla en la oscuridad de mis pensamientos.<br>
+            Nunca imaginé que el destino nos entrelazaría de esta manera,<br>
+            Que tú, con tu esencia tan única, iluminarías mis días con tu luz.<br><br>
+
+            Tu risa es como una melodía que danza en el aire,<br>
+            Un canto que despeja las nubes y hace que todo se sienta más brillante.<br>
+            Tu alegría es contagiosa, un regalo que compartes sin reservas,<br>
+            Un don que hace que los momentos simples se conviertan en recuerdos preciosos.<br><br>
+
+            Tu bondad y ternura son un refugio en tiempos inciertos,<br>
+            Un bálsamo para el alma, una suavidad que todo lo cura.<br>
+            Eres una tormenta de calor en un mundo frío,<br>
+            Un abrazo cálido en el corazón de quien lo necesita.<br><br>
+
+            A veces me encuentro perdido en tus ojos,<br>
+            Maravillado por la profundidad y el brillo que encierran.<br>
+            Es un misterio cómo alguien puede ser tan maravillosa,<br>
+            Cómo cada gesto tuyo tiene el poder de cambiar el curso de mi día.<br><br>
+
+            Cada conversación contigo es una aventura,<br>
+            Un viaje a través de historias y sueños compartidos.<br>
+            Me haces ver el mundo con nuevos ojos,<br>
+            Y en tu presencia, los problemas parecen desvanecerse.<br><br>
+
+            Vale, no hay palabras suficientes para expresar lo que siento,<br>
+            Pero en cada momento compartido, en cada sonrisa,<br>
+            Encuentro razones para admirarte y quererte más.<br>
+            Eres un regalo que nunca supe que necesitaba, pero que ahora no puedo imaginar mi vida sin ti.<br><br>
+
+            Así que, gracias por ser tú, por ser esa luz que ilumina mis días,<br>
+            Por ser la inspiración detrás de mis sonrisas más sinceras.<br>
+            Espero que este poema te recuerde lo especial que eres,<br>
+            Y cuánto significas para mí en este viaje llamado vida...
+        </p>
+        <div class="tenor-gif-embed" data-postid="24105461" data-share-method="host" data-aspect-ratio="0.875" data-width="50%">
+            <a href="https://tenor.com/view/peach-goma-love-peachcute-and-gif-24105461">Peach Goma GIF</a> 
+            from <a href="https://tenor.com/search/peach-gifs">Peach GIFs</a>
+        </div> 
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+
+    <script>
+        document.getElementById('envelope').addEventListener('click', function() {
+            document.body.style.backgroundColor = '#ffe4e1'; /* Color rosa pastel */
+            document.getElementById('envelope').style.display = 'none';
+            document.getElementById('gif-container').style.display = 'none';
+            document.getElementById('letter').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

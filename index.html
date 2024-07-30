@@ -10,22 +10,81 @@
             background-color: #f0f0f0;
             margin: 0;
             padding: 10px;
+            text-align: center;
+        }
+        .envelope {
+            width: 90%;
+            max-width: 300px;
+            height: 200px;
+            background-color: white;
+            border: 2px solid #d3d3d3;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s, opacity 1s;
+            opacity: 1;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .heart {
+            width: 50px;
+            height: 45px;
+            background-color: red;
+            transform: rotate(-45deg);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            width: 50px;
+            height: 45px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart::before {
+            top: -22.5px;
+            left: 0;
+        }
+        .heart::after {
+            top: 0;
+            left: 22.5px;
         }
         .letter {
+            display: none;
             background-color: white;
             border: 2px solid #d3d3d3;
             border-radius: 10px;
             padding: 20px;
-            width: 100%;
+            width: 90%;
             max-width: 500px;
             margin: auto;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
+        }
+        .letter p {
+            margin: 0;
+            color: #333;
+            line-height: 1.5;
+        }
+        .tenor-gif-embed {
+            max-width: 100%;
+            width: 150px; /* Ajusta el tamaño del GIF */
         }
     </style>
 </head>
 <body>
-    <div class="letter">
+    <div class="envelope" id="envelope">
+        <div class="heart"></div>
+        <p>Ábreme</p>
+    </div>
+    <div class="letter" id="letter">
         <p>
             Vale,<br><br>
             Eres un rincón de calma en medio del torbellino,<br>
@@ -63,7 +122,20 @@
             Espero que este poema te recuerde lo especial que eres,<br>
             Y cuánto significas para mí en este viaje llamado vida...
         </p>
+        <div class="tenor-gif-embed" data-postid="24105461" data-share-method="host" data-aspect-ratio="0.875" data-width="50%">
+            <a href="https://tenor.com/view/peach-goma-love-peachcute-and-gif-24105461">Peach Goma GIF</a> 
+            from <a href="https://tenor.com/search/peach-gifs">Peach GIFs</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     </div>
+
+    <script>
+        document.getElementById('envelope').addEventListener('click', function() {
+            document.body.style.backgroundColor = '#ffe4e1'; /* Color rosa pastel */
+            document.getElementById('envelope').style.display = 'none';
+            document.getElementById('letter').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
 

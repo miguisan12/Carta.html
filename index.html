@@ -13,8 +13,8 @@
             height: 100vh;
             background-color: #f0f0f0;
             margin: 0;
-            padding: 10px; /* Añadido para margen interior en móviles */
-            transition: background-color 0.5s;
+            padding: 10px;
+            box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
         }
         .envelope {
             width: 90%; /* Ajustado para dispositivos móviles */
@@ -33,6 +33,7 @@
             opacity: 0;
             animation: fadeIn 1s forwards;
             position: relative;
+            margin-bottom: 20px;
         }
         .envelope:hover {
             transform: scale(1.05);
@@ -81,8 +82,10 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
-            width: 90%; /* Ajustado para dispositivos móviles */
+            width: 100%; /* Ajustado para dispositivos móviles */
             max-width: 500px;
+            margin-top: 20px;
+            box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
         }
         .letter p {
             margin: 0;
@@ -176,4 +179,5 @@
     </script>
 </body>
 </html>
+
 
